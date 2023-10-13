@@ -83,7 +83,6 @@ public class FoodGoods {
         if (isExpired()) {
             return "Expired!!!";
         }
-
         String strPrice = df.format(price);
 
         return String.format("%-15s | %-30s | %15s | %15s | %15s | %-20s", goodsCode, goodsName, strPrice, manufacturingDate.format(dtf), expiredDate.format(dtf), note);
