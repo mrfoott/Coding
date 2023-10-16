@@ -70,7 +70,7 @@ public class Account {
 
     public boolean withdraw(double amount, double fee) {
         if (this.balance >= (amount + fee)) {
-            this.balance -= (amount + fee);
+            this.balance = balance - (amount + fee);
             System.out.println("You've just withdrew " + amount + " VND. Fee is " + fee + ". Remaining balance: " + balance );
             return true;
         } else {
